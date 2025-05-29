@@ -1,10 +1,10 @@
 pipeline {
     agent any
+
     stages {
-        stage('Build Java') {
+        stage('Run Python Script') {
             steps {
-                bat 'javac HelloWorld.java'
-                bat 'java HelloWorld'
+                bat 'python hello.py'
             }
         }
     }
